@@ -1,1 +1,24 @@
-//none right now
+# Environment + secrets
+.env
+.env.*
+!.env.example
+credentials.txt
+*token*.txt
+fetch_token.sh
+
+# Backups (.bak, .bak2, .bak.20260519, .backup, .backup-20251014, .before-trading-fix-*)
+*.bak*
+*.backup*
+*.before-*
+
+# n8n data volume (encryption key, creds DB, logs)
+n8n_data/
+
+# Postman / test artifacts (may contain captured tokens)
+newman_output.json
+*.postman_collection.json
+
+# OS / editor noise
+.DS_Store
+*.swp
+*.swo
